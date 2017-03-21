@@ -26,7 +26,11 @@
         android:id="@+id/shimmer_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
         android:text="放不开的双手"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:reflectionColor="#1F1"/>
 
     <com.hc.testheart.RevealTextView
