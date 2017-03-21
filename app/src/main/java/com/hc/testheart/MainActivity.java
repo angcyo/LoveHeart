@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.hc.testheart.shimmer.Shimmer;
+import com.hc.testheart.shimmer.ShimmerTextView;
+
 public class MainActivity extends Activity {
     HeartView2 heartView;
 
@@ -20,6 +23,13 @@ public class MainActivity extends Activity {
         heartView = (HeartView2) findViewById(R.id.surfaceView);
 //
         enableLayoutFullScreen();
+
+        RevealTextView revealTextView = (RevealTextView) findViewById(R.id.reveal_text_view);
+        revealTextView.setAnimationDuration(2000);
+        revealTextView.setLoop(true);
+        revealTextView.setAnimatedText("死胖子");
+
+        new Shimmer().start(((ShimmerTextView) findViewById(R.id.shimmer_text_view)));
     }
 
     @Override
